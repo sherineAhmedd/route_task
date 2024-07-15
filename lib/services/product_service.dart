@@ -4,6 +4,7 @@ import 'dart:convert';
 class ProductService {
   final String apiUrl = "https://dummyjson.com/products";
 
+
   Future<List<Product>> fetchProducts() async {
     final response = await http.get(Uri.parse(apiUrl));
     if (response.statusCode == 200) {
